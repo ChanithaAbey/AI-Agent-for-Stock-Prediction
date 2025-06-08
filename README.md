@@ -1,6 +1,6 @@
 # AI Agent for Stock Prediction and Analysis
 
-An AI Agent for stock data analysis, news rerieval, and prediction; powered by yfinance, GroqCloud, Llama and TheNewsAPI.
+An AI Agent for stock data analysis, news rerieval, and prediction; powered by Yahoo Finance, GroqCloud, Llama and TheNewsAPI.
 
 ## Features
 
