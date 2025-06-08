@@ -4,12 +4,12 @@ An AI Agent for stock data analysis, news rerieval, and prediction; powered by Y
 
 ## Features
 
-- Fetches 1-year historical stock data for any ticker (supports global stocks, e.g., AAPL, MSFT).
-- Automatically identifies periods of highest and lowest stock prices.
-- Retrieves relevant business/technology news for significant price events.
-- Provides a comprehensive analysis, recommendations (Buy/Sell/Hold), and summary using an LLM API.
-- Plots the stock price history on a graph using matplotlib.
-- CLI interface with robust error handling, enabling the script to run on almost any device.
+- It gets the immediate 1-year history stocks data for any global stock ticker (Eg: AAPL, MSFT, etc.)
+- Automatically recognizes periods of high or low share prices
+- Retrieves relevant business/technology news that are linked to significant price events.
+- Provides in-depth analysis, Buy/Sell/Hold suggestion, and summarization through an LLM API (Llama LLM, provided by Groq Cloud).
+- Graphical Representation of the stocks performance using matplotlib.
+- Robust error-handling CLI interface, enabling the script to run in nearly any device.
 
 ## Setup
 
