@@ -66,3 +66,202 @@ python main.py
 ## License
 MIT License | Copyright (c) 2025 Chanitha Disas Abeygunawardena
 
+## Example Output
+
+```
+Enter stock ticker symbol: AAPL
+
+Highest price details:
+Date            2024-12-26
+Open                257.57
+High                259.47
+Low                 257.01
+Close                258.4
+Volume            27237100
+Dividends              0.0
+Stock Splits           0.0
+Name: 138, dtype: object
+
+News for 2024-12-26
+Tech Bull Predicts 26% Upside For Apple Stock, Sees 'Golden Era Of Growth' For Cupertino Due To Multi-Year AI-Driven iPhone Upgrade Cycle - Apple (NASDAQ:AAPL)
+AI Startup CTO’s Green Card Rejected by USCIS, Reason – An Apple Connection
+Understanding Apple's Position In Technology Hardware, Storage & Peripherals Industry Compared To Competitors - Apple (NASDAQ:AAPL)
+
+
+Lowest price details:
+Date            2025-04-08
+Open                186.46
+High                190.09
+Low                 168.99
+Close               172.19
+Volume           120859500
+Dividends              0.0
+Stock Splits           0.0
+Name: 207, dtype: object
+
+News for 2025-04-08
+Performance Comparison: Apple And Competitors In Technology Hardware, Storage & Peripherals Industry - Apple (NASDAQ:AAPL)
+Despite Tariff Turmoil, Bitcoin Outperforms 'Magnificent 7' Stocks In 2025 — Records Smaller Losses Than Nvidia, Tesla, Apple - Apple (NASDAQ:AAPL)
+Marvell Technology, Nvidia, Tesla, Apple And Other Big Stocks Moving Higher On Tuesday - Apple (NASDAQ:AAPL), Applied Optoelectronics (NASDAQ:AAOI)
+
+
+Stock data for AAPL:
+         Date    Open    High     Low   Close     Volume  Dividends  Stock Splits
+0  2024-06-10  195.98  196.38  191.26  192.22   97262100        0.0           0.0
+1  2024-06-11  192.75  206.20  192.73  206.19  172373300        0.0           0.0
+2  2024-06-12  206.40  219.18  205.94  212.08  198134300        0.0           0.0
+3  2024-06-13  213.74  215.74  210.62  213.24   97862700        0.0           0.0
+4  2024-06-14  212.85  214.17  210.32  211.50   70122700        0.0           0.0
+Data saved to AAPL_stock_data.csv
+
+
+Stock Performance Analysis
+The stock's price has been trending upwards, with a mean close price of 223.26. The highest close price was 258.4, while the lowest was 172.19. The standard deviation of the close price is 15.01, indicating moderate volatility.
+
+News and Events
+There are no significant news or events that have affected the stock's price trends.
+
+Volatility Analysis
+The volatility of the stock is moderate, with a standard deviation of 15.01. This indicates that the stock's price can fluctuate by around 15 points in either direction.
+
+Volume Trends
+The volume traded has been increasing over time, with a mean volume of 56.19 million shares. The highest volume traded was 318.68 million shares, while the lowest was 23.23 million shares.
+
+Support and Resistance Levels
+The support level is around 210, while the resistance level is around 230.
+
+Technical Indicators
+The Relative Strength Index (RSI) is around 50, indicating a neutral trend. The Moving Average Convergence Divergence (MACD) is around 0, indicating a neutral trend.
+
+Comparative Performance
+The stock's performance is comparable to its peers in the technology sector.
+
+Dividend History
+There are no significant dividend payments made by the company.
+
+Risk Factors
+The company is exposed to risks such as competition, regulatory changes, and economic downturns.
+
+Recommendations
+
+For Traders (Weekly):
+1st Week: Buy - The stock's price is trending upwards, and the RSI is around 50, indicating a buying opportunity.
+2nd Week: Hold - The price is consolidating around 210, and the MACD is around 0, indicating a neutral trend.
+3rd Week: Buy - The stock's price is breaking out above 210, and the RSI is around 60, indicating a buying opportunity.
+4th Week: Sell - The stock's price is consolidating around 230, and the MACD is around 70, indicating a selling opportunity.
+
+For Investors (Monthly):
+1st Month: Buy - The stock's price is trending upwards, and the RSI is around 50, indicating a buying opportunity.
+2nd Month: Hold - The price is consolidating around 210, and the MACD is around 0, indicating a neutral trend.
+3rd Month: Buy - The stock's price is breaking out above 210, and the RSI is around 60, indicating a buying opportunity.
+4th Month: Hold - The stock's price is consolidating around 230, and the MACD is around 70, indicating a neutral trend.
+5th Month: Buy - The stock's price is trending upwards, and the RSI is around 50, indicating a buying opportunity.
+6th Month: Hold - The price is consolidating around 210, and the MACD is around 0, indicating a neutral trend.
+7th Month: Buy - The stock's price is breaking out above 210, and the RSI is around 60, indicating a buying opportunity.
+8th Month: Hold - The stock's price is consolidating around 230, and the MACD is around 70, indicating a neutral trend.
+9th Month: Buy - The stock's price is trending upwards, and the RSI is around 50, indicating a buying opportunity.
+10th Month: Hold - The price is consolidating around 210, and the MACD is around 0, indicating a neutral trend.
+
+Summary
+The stock's price has been trending upwards, with moderate volatility. The RSI and MACD indicate a neutral trend. The company is exposed to risks such as competition, regulatory changes, and economic downturns. The recommendations are based on technical analysis and may not reflect the company's fundamental value.
+
+C:\Users\Asus\Documents\GitHub\AI Agent for Stock Prediction and Analysis>main.py
+Enter stock ticker symbol: NKE
+
+Highest price details:
+Date            2024-06-24
+Open                 95.26
+High                 95.98
+Low                  94.65
+Close                95.13
+Volume             9466900
+Dividends              0.0
+Stock Splits           0.0
+Name: 9, dtype: object
+
+News for 2024-06-24
+Nike, Inc. Investors: Class action lawsuit filed on behalf of investors; the Portnoy Law Firm
+S&P 500 Earnings: Don't Ignore 2025 Estimates
+NIKE ALERT: Bragar Eagel & Squire, P.C. Announces that a Class Action Lawsuit Has Been Filed Against NIKE, Inc. and Encourages Investors to Contact the Firm
+
+
+Lowest price details:
+Date            2025-04-10
+Open                 56.85
+High                 56.87
+Low                  51.93
+Close                54.04
+Volume            53919800
+Dividends              0.0
+Stock Splits           0.0
+Name: 209, dtype: object
+
+News for 2025-04-10
+Nike Inc (NKE) Shares Down 11.08% on Apr 10
+Nike (NKE) Price Target Reduced by Stifel Amid Tariff Concerns | NKE Stock News
+Retail Stocks React to Tariff Pause: BOOT, DECK, HAS, MAT, NKE
+
+
+Stock data for NKE:
+         Date   Open   High    Low  Close   Volume  Dividends  Stock Splits
+0  2024-06-10  93.72  94.95  93.59  93.98  7035600        0.0           0.0
+1  2024-06-11  93.51  93.98  92.54  93.86  7301500        0.0           0.0
+2  2024-06-12  94.33  94.47  91.54  91.71  9861300        0.0           0.0
+3  2024-06-13  92.07  92.55  91.75  92.20  8348200        0.0           0.0
+4  2024-06-14  91.83  92.79  91.34  91.43  7426800        0.0           0.0
+Data saved to NKE_stock_data.csv
+
+
+Stock Performance Analysis
+The stock performance analysis shows that the stock has been trending downwards over the past year, with a significant decline in the last quarter of 2024 and the first quarter of 2025. The stock price has been volatile, with sudden spikes and dips. The highest price was recorded in June 2024, and the lowest price was recorded in May 2025.
+
+News and Events
+There is no significant news or events that may have caused the stock price to fluctuate. However, the dividend payment of $0.4 in June 2025 may have caused a slight increase in the stock price.
+
+Volatility Analysis
+The volatility analysis shows that the stock has been highly volatile, with a standard deviation of 9.155079. This indicates that the stock price can fluctuate rapidly and unpredictably.
+
+Volume Trends
+The volume trends show that the trading volume has been increasing over time, with a peak in June 2025. This may indicate that investors are becoming more interested in the stock.
+
+Support and Resistance Levels
+The support level is around $60, and the resistance level is around $95. The stock price has been trending downwards and has broken through the support level, indicating a bearish trend.
+
+Technical Indicators
+The technical indicators, such as the moving average and relative strength index, indicate a bearish trend.
+
+Comparative Performance
+The comparative performance analysis shows that the stock has underperformed compared to its peers.
+
+Dividend History
+The dividend history shows that the company has paid dividends consistently, with a dividend yield of 0.006305.
+
+Risk Factors
+The risk factors include the company's dependence on a single product, the competitive nature of the industry, and the impact of global economic trends.
+
+Recommendations
+
+For Traders (Weekly):
+1st Week: Sell - The stock price is trending downwards, and the technical indicators indicate a bearish trend.
+2nd Week: Sell - The stock price is still trending downwards, and the trading volume is increasing.
+3rd Week: Hold - The stock price is consolidating, and the technical indicators are neutral.
+4th Week: Sell - The stock price is trending downwards, and the technical indicators indicate a bearish trend.
+
+For Investors (Monthly):
+1st Month: Sell - The stock price is trending downwards, and the company's fundamentals are weak.
+2nd Month: Sell - The stock price is still trending downwards, and the technical indicators indicate a bearish trend.
+3rd Month: Hold - The stock price is consolidating, and the company's fundamentals are still weak.
+4th Month: Sell - The stock price is trending downwards, and the technical indicators indicate a bearish trend.
+5th Month: Sell - The stock price is still trending downwards, and the company's fundamentals are weak.
+6th Month: Hold - The stock price is consolidating, and the technical indicators are neutral.
+7th Month: Sell - The stock price is trending downwards, and the technical indicators indicate a bearish trend.
+8th Month: Sell - The stock price is still trending downwards, and the company's fundamentals are weak.
+9th Month: Hold - The stock price is consolidating, and the technical indicators are neutral.
+10th Month: Sell - The stock price is trending downwards, and the technical indicators indicate a bearish trend.
+
+Summary
+The stock performance analysis shows that the stock has been trending downwards over the past year, with a significant decline in the last quarter of 2024 and the first quarter of 2025. The technical indicators and fundamental analysis indicate a bearish trend. Therefore, the recommendation is to sell the stock.
+```
+
+---
+
