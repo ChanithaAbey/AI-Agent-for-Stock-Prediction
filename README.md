@@ -51,10 +51,10 @@ python main.py
 ## Files
 
 - `main.py` - Main script which retrieves and analyzes data whilsnt plotting and storing.
-- `news_module.py` - NewsAgent class for fetching news related to stock events.
-- `.env.example` - Sample for environment variables.
+- `news_module.py` - NewsAgent module which provides news, related to stock changes.
+- `.env.example` - Example file for enviroment variabes (API Keys)
 - `requirements.txt` - Python dependencies.
-- `.gitignore` - Standard ignores for Python projects.
+- `.gitignore` - Standard ignores.
 
 ## Notes
 
