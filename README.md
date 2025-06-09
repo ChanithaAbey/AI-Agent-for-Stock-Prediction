@@ -8,6 +8,7 @@ An AI Agent for stock data analysis, news rerieval, and prediction; powered by Y
 - Automatically recognizes periods of high or low share prices
 - Retrieves relevant business/technology news that are linked to significant price events.
 - Provides in-depth analysis, Buy/Sell/Hold suggestion, and summarization through an LLM API (Llama LLM, provided by Groq Cloud).
+- Stores all data in a .csv file, for further analysis.
 - Graphical Representation of the stocks performance using matplotlib.
 - Robust error-handling CLI interface, enabling the script to run in nearly any device.
 
