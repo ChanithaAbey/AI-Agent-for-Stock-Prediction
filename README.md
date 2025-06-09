@@ -67,7 +67,10 @@ python main.py
 MIT License | Copyright (c) 2025 Chanitha Disas Abeygunawardena
 
 ## Example Output
-
+# Apple Stock Analysis and Prediction
+![image alt](https://github.com/ChanithaAbey/AI-Agent-for-Stock-Prediction/blob/1d0abb2dbd88b971420c51bee498fb74ac1960ad/screenshots/screenshot_aapl.png)
+# Nike Stock Analysis and Prediction
+![image alt](https://github.com/ChanithaAbey/AI-Agent-for-Stock-Prediction/blob/1d0abb2dbd88b971420c51bee498fb74ac1960ad/screenshots/screenshot_nke.png)
 ```
 Enter stock ticker symbol: AAPL
 
