@@ -64,5 +64,5 @@ python main.py
 - **The author of this program will not be responsible or held accounatble for any consequences of use.**
 
 ## License
-Copyright (c) 2025 Chanitha Disas Abeygunawardena
-MIT License
+MIT License | Copyright (c) 2025 Chanitha Disas Abeygunawardena
+
