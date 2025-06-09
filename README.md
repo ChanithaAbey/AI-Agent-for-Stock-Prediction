@@ -49,7 +49,7 @@ python main.py
 
 ## Files
 
-- `main.py` - Main script for data retrieval, analysis, and plotting.
+- `main.py` - Main script which retrieves and analyzes data whilsnt plotting and storing.
 - `news_module.py` - NewsAgent class for fetching news related to stock events.
 - `.env.example` - Sample for environment variables.
 - `requirements.txt` - Python dependencies.
