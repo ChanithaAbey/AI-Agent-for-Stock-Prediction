@@ -1,4 +1,3 @@
-#Import Needed Libraries
 import yfinance as yf
 from datetime import datetime, timedelta
 import pandas as pd
@@ -13,10 +12,8 @@ load_dotenv()
 
 import os
 
-#Load API Key
 key = os.getenv("GROQ_API_KEY")
 
-#Sample Tickers
 TICKER_TO_COMPANY = {
     "MSFT": "Microsoft Corporation",
     "AAPL": "Apple Inc.",
@@ -26,14 +23,14 @@ TICKER_TO_COMPANY = {
     "META": "Meta Platforms, Inc."
 }
 
-#Function to get stock data from Yahoo Finance
+
 def fetch_stock_data(ticker_symbol, start_date=None, end_date=None):
-    try: #Handles incorrect ticker input
+    try: 
         if not ticker_symbol or not isinstance(ticker_symbol, str):
             print("Error: Invalid ticker symbol provided.")
             return None
 
-        #Handles incorrect datetime formating
+        
         if not end_date: 
             end_date = datetime.now().strftime('%Y-%m-%d')
 
@@ -55,12 +52,11 @@ def fetch_stock_data(ticker_symbol, start_date=None, end_date=None):
         df = df.round(2)
         return df
 
-    #Final exception
+
     except Exception as e:
         print(f"Error fetching stock data for {ticker_symbol}: {str(e)}")
         return None
 
-#Function to extract data into a CSV and Groq APIs Llama LLM for Analysis
 def analyze_stock_price(csv_file_name, company_name):
     try:
         csv_data = pd.read_csv(csv_file_name)
@@ -78,9 +74,9 @@ def analyze_stock_price(csv_file_name, company_name):
             "Content-Type": "application/json"
         }
 
-        #Tailored Prompt to ensure the desired output is returned
+        
         data = {
-            "model": "llama3-70b-8192",  # Or another Groq-supported model if desired
+            "model": "llama3-70b-8192",  
             "temperature": 0.7,
             "messages": [
                 {
@@ -146,14 +142,14 @@ def analyze_stock_price(csv_file_name, company_name):
                 }
             ]
         }
-        # Tailors Response
+        
         response = requests.post(
             "https://api.groq.com/openai/v1/chat/completions",
             headers=headers,
             json=data,
             timeout=60
         )
-        # Error handling in case of issue from Groq
+       
         if response.status_code != 200:
             print(f"Groq API returned status code {response.status_code}: {response.text}")
             return None
@@ -165,7 +161,7 @@ def analyze_stock_price(csv_file_name, company_name):
         print(f"An error occurred during analysis: {e}")
         return None
 
-#Function to plot data in a graph, using matplotlib
+
 def plot_stock_data(stock_data, ticker, company_name):
     try:
         if stock_data is None or stock_data.empty:
@@ -183,7 +179,7 @@ def plot_stock_data(stock_data, ticker, company_name):
     except Exception as e:
         print(f"Error displaying the stock performance graph: {e}")
 
-#Main Function with full Error Handling to ensure the program doesnt break
+
 if __name__ == "__main__":
     try:
         ticker = input("Enter stock ticker symbol: ").strip().upper()
@@ -253,7 +249,7 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"Analysis step failed: {e}")
 
-        # Plotting step
+
         plot_stock_data(stock_data, ticker, company_name)
 
     except KeyboardInterrupt:
