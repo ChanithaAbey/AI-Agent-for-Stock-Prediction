@@ -14,7 +14,6 @@ import os
 
 key = os.getenv("GROQ_API_KEY")
 
-
 TICKER_TO_COMPANY = {
     "MSFT": "Microsoft Corporation",
     "AAPL": "Apple Inc.",
@@ -24,13 +23,15 @@ TICKER_TO_COMPANY = {
     "META": "Meta Platforms, Inc."
 }
 
+
 def fetch_stock_data(ticker_symbol, start_date=None, end_date=None):
-    try:
+    try: 
         if not ticker_symbol or not isinstance(ticker_symbol, str):
             print("Error: Invalid ticker symbol provided.")
             return None
+
         
-        if not end_date:
+        if not end_date: 
             end_date = datetime.now().strftime('%Y-%m-%d')
 
         if not start_date:
@@ -50,7 +51,8 @@ def fetch_stock_data(ticker_symbol, start_date=None, end_date=None):
         df['Date'] = pd.to_datetime(df['Date']).dt.date
         df = df.round(2)
         return df
-    
+
+
     except Exception as e:
         print(f"Error fetching stock data for {ticker_symbol}: {str(e)}")
         return None
@@ -71,8 +73,10 @@ def analyze_stock_price(csv_file_name, company_name):
             "Authorization": f"Bearer {key}",
             "Content-Type": "application/json"
         }
+
+        
         data = {
-            "model": "llama3-70b-8192",  # Or another Groq-supported model if desired
+            "model": "llama3-70b-8192",  
             "temperature": 0.7,
             "messages": [
                 {
@@ -138,12 +142,14 @@ def analyze_stock_price(csv_file_name, company_name):
                 }
             ]
         }
+        
         response = requests.post(
             "https://api.groq.com/openai/v1/chat/completions",
             headers=headers,
             json=data,
             timeout=60
         )
+       
         if response.status_code != 200:
             print(f"Groq API returned status code {response.status_code}: {response.text}")
             return None
@@ -154,6 +160,7 @@ def analyze_stock_price(csv_file_name, company_name):
     except Exception as e:
         print(f"An error occurred during analysis: {e}")
         return None
+
 
 def plot_stock_data(stock_data, ticker, company_name):
     try:
@@ -171,6 +178,7 @@ def plot_stock_data(stock_data, ticker, company_name):
         plt.show()
     except Exception as e:
         print(f"Error displaying the stock performance graph: {e}")
+
 
 if __name__ == "__main__":
     try:
@@ -241,7 +249,7 @@ if __name__ == "__main__":
         except Exception as e:
             print(f"Analysis step failed: {e}")
 
-        # Plotting step
+
         plot_stock_data(stock_data, ticker, company_name)
 
     except KeyboardInterrupt:
